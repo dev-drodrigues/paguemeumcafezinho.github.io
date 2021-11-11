@@ -6,8 +6,23 @@
     --font: 'Karla', sans-serif;
 }
 
-body{
-    background-color: var(--bgColor);
+.body {
+	background: linear-gradient(-45deg, #ee7652e0, #e73c7e (35, 165, 213, 0.342)d5, #aed523);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 #userPhoto{
@@ -58,6 +73,7 @@ body{
     font-size: 20px;
     transition: all .25s cubic-bezier(.08,.59,.29,.99);
     border: solid var(--accentColor) 2px;
+    
 }
 
 .link:hover{
@@ -491,7 +507,14 @@ img[alt ="pause-icon"] {
     line-height: 2.7142857142857144;
     background: #20fa94;
     border-radius: 0.2857142857142857
-    
+    }
+
+.texto{
+color: var( --e-global-color-c080a04 );
+font-family: "DM Serif Display", Sans-serif;
+font-size: 20px;
+font-weight: 500;
+line-height: 22px;
+text-align: center;
+
 }
-
-
